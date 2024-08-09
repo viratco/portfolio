@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Projects</title>
+    <style>
+        /* Navbar Styling */
+        .navbar {
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #ff7e5f;
+        }
+
+        /* Background Image and Centered Text */
+        .myproject {
+            background-image: url('work.avif');
+            background-size: cover;
+            background-position: center;
+            height: 80vmin;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .myproject h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Skills Section Styling */
+        #skills {
+            background: #f9f9f9;
+            padding: 5rem 0;
+        }
+
+        .line {
+            border: 0;
+            background-color: #333;
+            height: 2px;
+            margin-bottom: 3rem;
+        }
+
+        .skill-box {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding: 2rem;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .skill-box h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .skill-box p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Bug Fixing Section Styling */
+        #bugs {
+            background: #f9f9f9;
+            padding: 5rem 0;
+        }
+
+        #bugs .line {
+            margin-bottom: 3rem;
+        }
+
+        .collapse .card-body {
+            text-align: left;
+        }
+
+        .collapse .card-body ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .collapse .card-body li {
+            margin-bottom: 1rem;
+        }
+
+        .collapse .card-body li::before {
+            content: "•";
+            color: #007bff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1rem;
+            margin-left: -1rem;
+        }
+
+        .collapse .card-body span {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .myproject h1 {
+                font-size: 2.5rem;
+            }
+
+            .navbar {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .myproject h1 {
+                font-size: 2rem;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            }
+
+            .navbar {
+                padding: 0.5rem;
+            }
+
+            .navbar-brand {
+                font-size: 1.25rem;
+            }
+
+            .nav-link {
+                padding: 0.25rem 0.5rem;
+            }
+        }
+    </style>
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutme.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactme.html">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="myproject" data-aos="fade-up">
+        <h1>My Projects</h1>
+    </div>
+
+    <section id="skills" class="py-5" data-aos="fade-up">
+        <div class="container text-center">
+            <h1>My Skills</h1>
+            <hr class="line">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="skill-box p-4" onclick="redirectTo('frontend.html')">
+                        <h2>Frontend</h2>
+                        <p>HTML, CSS, JavaScript, React</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="skill-box p-4" onclick="redirectTo('backend.html')">
+                        <h2>Backend</h2>
+                        <p>PHP, MySQL, Python</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="skill-box p-4" onclick="redirectTo('cloud.html')">
+                        <h2>Cloud</h2>
+                        <p>AWS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bugs" class="py-5" data-aos="fade-up">
+        <div class="container text-center">
+            <h1 data-aos="fade-up">Bug Fixing</h1>
+            <hr class="line" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-up">
+                    <div class="p-2">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseBugFixing1" role="button" aria-expanded="false" aria-controls="collapseBugFixing1">
+                            What is bug fixing?
+                        </a>
+                        <div class="collapse mt-3" data-aos="fade-up"id="collapseBugFixing1">
+                            <div class="card card-body">
+                                Bug fixing refers to the process of identifying, analyzing, and resolving issues or defects (bugs) within a software application. It is a crucial aspect of software maintenance and development, ensuring the application runs smoothly and efficiently.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2" data-aos="fade-up">
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseBugFixing2" role="button" aria-expanded="false" aria-controls="collapseBugFixing2">
+                            What can I offer in bug fixing?
+                        </a>
+                        <div class="collapse mt-3 " data-aos="fade-up" id="collapseBugFixing2">
+                            <div class="card card-body">
+                                <ul class="p-2">
+                                    <li><span>Neat and Clean Design:</span> We create visually appealing websites with a clean and modern design, ensuring an aesthetically pleasing user experience.</li>
+                                    <li><span>Responsive on Every Device:</span> Our websites are fully responsive, adapting seamlessly to different screen sizes and devices for optimal viewing and interaction.</li>
+                                    <li><span>Bug Fixing and Optimization:</span> We identify and resolve any bugs in your code, optimizing performance to ensure smooth and efficient operation.</li>
+                                    <li><span>Expert Query Assistance:</span> Our team is available to assist with any queries, providing expert advice and solutions tailored to your needs.</li>
+                                    <li><span>Consistent and Professional Layout:</span> Utilizing the latest design frameworks, we ensure a consistent and professional layout that enhances user engagement and satisfaction.</li>
+                                    <li><span>Fast Loading Times:</span> We implement best practices for web performance, including asset optimization and lazy loading, to deliver fast and efficient websites.</li>
+                                    <li><span>SEO-Friendly Structure:</span> Our websites are built with SEO in mind, ensuring better visibility and higher rankings on search engines.</li>
+                                    <li><span>Secure and Reliable:</span> We prioritize security, implementing robust measures to protect your website from potential threats and ensuring reliable performance.</li>
+                                    <li><span>Customizable Solutions:</span> We offer customizable solutions to meet your specific requirements, providing a personalized experience for your business or project.</li>
+                                    <li><span>Ongoing Support and Maintenance:</span> Our commitment doesn’t end at launch; we provide ongoing support and maintenance to keep your website running smoothly.</li>
+                                </ul>
+                                <p>Partner with us to create a website that is not only visually stunning but also highly functional and user-friendly. Our professional services are designed to meet and exceed your expectations, ensuring your online presence is impactful and effective.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+
+</html>

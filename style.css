@@ -1,0 +1,107 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(to right, #493cdb, rgba(255, 255, 255, 0.1));
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff7e5f;
+}
+
+/* Intro Section Styling */
+#intro {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5rem 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#introtext {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#virat {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #f8f9fa;
+}
+
+#developer {
+    font-size: 2rem;
+    color: #f8f9fa;
+}
+
+/* Image Styling */
+.introright img {
+    border-radius: 50%;
+    border: 5px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.introright img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Section Styling */
+#skills {
+    background: #f9f9f9;
+    padding: 5rem 0;
+}
+
+.line {
+    border: 0;
+    background-color: #333;
+    height: 2px;
+    margin-bottom: 3rem;
+}
+
+.skill-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 2rem;
+    height: 100%;
+    
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.skill-box h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.skill-box p {
+    font-size: 1.2rem;
+    color: #555;
+}
