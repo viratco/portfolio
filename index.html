@@ -147,12 +147,12 @@
     </nav>
 
     <section id="intro" class="py-5 text-center text-light">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row align-items-center">
                 <div class="introleft col-md-6">
-                    <h1 id="introtext">Hi! My name is <span id="virat">VIRAT</span></h1>
-                    <h2 id="introtext">and I am a</h2>
-                    <h3 id="developer">Frontend & Backend Developer</h3>
+                    <h1 data-aos="fade-up" id="introtext">Hi! My name is <span id="virat">VIRAT</span></h1>
+                    <h2  data-aos="fade-up" id="introtext">and I am a</h2>
+                    <h3 data-aos="fade-up" id="developer">Frontend & Backend Developer</h3>
                 </div>
                 <div class="introright col-md-6">
                     <img src="intropng.webp" class="img-fluid rounded-circle shadow-lg" alt="Introduction Image">
@@ -165,25 +165,29 @@
         <div class="container text-center">
             <hr class="line">
             <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
                     <div class="skill-box p-4" onclick="redirectTo('aboutme.html')">
                         <h2>About Me</h2>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
                     <div class="skill-box p-4" onclick="redirectTo('projects.html')">
                         <h2>Projects</h2>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="skill-box p-4" onclick="redirectTo('contact.html')">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up"> 
+                    <div class="skill-box p-4" onclick="redirectTo('contactme.php')">
                         <h2>Contact Me</h2>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+ <script>
         AOS.init({
             duration: 1000,
             once: true
